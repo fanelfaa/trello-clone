@@ -81,10 +81,10 @@ export const appStateReducer = (
 			// TODO: need to fix this
 			// Remove the task from the source list
 			draft.lists[sourceListIndex].tasks.splice(dragIndex, 1)
-			if (item) {
-				// Add the task to the target list
-				draft.lists[targetListIndex].tasks.splice(hoverIndex, 0, item)
-			}
+			// if (item) {
+			// Add the task to the target list
+			draft.lists[targetListIndex].tasks.splice(hoverIndex, 0, item)
+			// }
 			break
 		}
 
